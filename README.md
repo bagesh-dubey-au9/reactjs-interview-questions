@@ -6218,7 +6218,7 @@
    **[⬆ Back to Top](#table-of-contents)**
     
 319. ### What is Concurrent Rendering?
-     The Concurrent rendering makes React apps to be more responsive by rendering component trees without blocking the main UI thread. It allows React to interrupt a long-running render to handle a high-priority event. i.e, When you enabled concurrent Mode, React will keep an eye on other tasks that need to be done, and if there's something with a higher priority it will pause what it is currently rendering and let the other task finish first. You can enable this in two ways,
+     The Concurrent rendering makes React apps more responsive by rendering component trees without blocking the main UI thread. It allows React to interrupt a long-running render to handle a high-priority event. i.e, when you enable Concurrent Mode, React will keep an eye on other tasks that need to be done, and if there's something with a higher priority, it will pause what it is currently rendering and let the other task finish first. You can enable this in two ways,
      ```javascript
      // 1. Part of an app by wrapping with ConcurrentMode
      <React.unstable_ConcurrentMode>
@@ -6248,6 +6248,7 @@
      Remember that the future versions will throw an error for javascript URLs.
   
    **[⬆ Back to Top](#table-of-contents)**
+
 322. ### What is the purpose of eslint plugin for hooks?
      The ESLint plugin enforces rules of Hooks to avoid bugs. It assumes that any function starting with ”use” and a capital letter right after it is a Hook. In particular, the rule enforces that,
      1. Calls to Hooks are either inside a PascalCase function (assumed to be a component) or another useSomething function (assumed to be a custom Hook).
